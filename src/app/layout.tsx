@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { Cairo } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer/footer";
+import Navbar from "@/components/navbar/navbar";
 
 const cairo = Cairo({
   variable: "--font-cairo",
   subsets: ["latin"],
-})
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +25,9 @@ export default function RootLayout({
       dir="rtl"
       className={`${cairo.className} h-full antialiased`}
     >
-      <body>{children}
+      <body>
+        <Navbar />
+        <div className="pt-32">{children}</div>
         <Footer />
       </body>
     </html>

@@ -1,3 +1,5 @@
-import footerLogo from "./footer-logo.png";
+import mainLogo from "./main-logo.svg";
+import footerLogo from "./footer-logo.svg";
+import whatsappVector from "./whatsapp-vector.svg";
 
-export { footerLogo };
+export { mainLogo, footerLogo, whatsappVector };
