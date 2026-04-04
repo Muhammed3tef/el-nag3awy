@@ -1,10 +1,13 @@
+import Link from "next/link";
+
 type Props = {
   className?: string;
   variant?: "primary" | "secondary";
+  to?: string;
   onClick?: () => void;
   children: React.ReactNode;
 };
-const Button = ({ className, variant = "primary", onClick, children }: Props) => {
+const Button = ({ className, variant = "primary",to, onClick, children }: Props) => {
   const variantClasses =
     variant === "primary"
       ? "bg-green-600 hover:bg-green-700  text-white"
@@ -14,7 +17,7 @@ const Button = ({ className, variant = "primary", onClick, children }: Props) =>
       onClick={onClick}
       className={`${className} ${variantClasses} cursor-pointer text-sm md:text-base font-bold transition flex items-center justify-center gap-2 px-4 py-2 rounded-md`}
     >
-      {children}
+      {to ? <Link href={to}>{children}</Link> : children}
     </button>
   );
 };
