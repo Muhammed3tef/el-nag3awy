@@ -7,6 +7,43 @@ import HeroSection from "@/components/section/hero-section";
 import FeatureListCard from "@/components/cards/feature-list-card";
 import { heroImg } from "../../../public/imgs";
 
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "شراء الأثاث المستعمل في الرياض | أفضل أسعار لبيع الأثاث المستعمل",
+  description:
+    "نشتري الأثاث المستعمل في الرياض بأفضل الأسعار. خدمات سريعة وموثوقة لشراء غرف النوم، المطابخ، الأجهزة المنزلية والمزيد. تواصل معنا الآن للحصول على تقييم مجاني.",
+
+  keywords: [
+    "شراء الأثاث المستعمل الرياض",
+    "بيع أثاث مستعمل",
+    "شراء عفش مستعمل الرياض",
+    "أثاث مستعمل للبيع",
+    "شراء أجهزة منزلية مستعملة",
+    "شركة شراء أثاث مستعمل",
+    "بيع عفش بسرعة",
+  ],
+
+  authors: [{ name: "النجعاوي لشراء الأثاث المستعمل" }],
+  creator: "النجعاوي",
+  publisher: "النجعاوي",
+
+  openGraph: {
+    title: "شراء الأثاث المستعمل في الرياض | أسعار مميزة وخدمة سريعة",
+    description:
+      "هل لديك أثاث مستعمل؟ نشتريه بأفضل سعر في الرياض مع خدمة سريعة وتقييم مجاني.",
+    url: "https://your-domain.com/furns",
+    siteName: "النجعاوي",
+    locale: "ar_SA",
+    type: "website",
+  },
+
+  alternates: {
+    canonical: "https://your-domain.com/furns",
+  },
+};
+
 const Furns = () => {
   return (
     <>

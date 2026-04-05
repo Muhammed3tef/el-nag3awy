@@ -6,6 +6,42 @@ import { ourPrinciples, whyChooseUs } from "@/constants/pages-data";
 import ServiceListCard from "./_components/service-item";
 import FeatureGrid from "./_components/feature-grid";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "من نحن | شركة النجعاوي لشراء الأثاث المستعمل وبيع المطابخ في الرياض",
+  description:
+    "تعرف على شركة النجعاوي وخبرتنا في شراء الأثاث المستعمل وبيع المطابخ الحديثة في الرياض. نقدم خدمات موثوقة، أسعار عادلة، وخدمة احترافية نالت ثقة آلاف العملاء.",
+
+  keywords: [
+    "شركة النجعاوي",
+    "من نحن النجعاوي",
+    "شراء الأثاث المستعمل الرياض",
+    "شركة أثاث مستعمل الرياض",
+    "بيع مطابخ حديثة الرياض",
+    "شركة مطابخ الرياض",
+    "خدمات الأثاث المستعمل",
+  ],
+
+  authors: [{ name: "شركة النجعاوي" }],
+  creator: "النجعاوي",
+  publisher: "النجعاوي",
+
+  openGraph: {
+    title: "من نحن | النجعاوي",
+    description:
+      "شركة رائدة في شراء الأثاث المستعمل وبيع المطابخ الحديثة في الرياض بخبرة وثقة.",
+    url: "https://your-domain.com/about",
+    siteName: "النجعاوي",
+    locale: "ar_SA",
+    type: "website",
+  },
+
+  alternates: {
+    canonical: "https://your-domain.com/about",
+  },
+};
+
 const WhoAreWe = () => {
   return (
     <>

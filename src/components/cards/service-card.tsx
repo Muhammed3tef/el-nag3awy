@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { IconType } from "react-icons";
 import Card from "../ui/card/card";
 import Button from "../ui/button/button";
@@ -6,9 +7,10 @@ interface ServiceCardProps {
   icon: IconType;
   title: string;
   description: string;
+  to: string;
 }
 
-const ServiceCard = ({ icon, title, description }: ServiceCardProps) => {
+const ServiceCard = ({ icon, title, description, to }: ServiceCardProps) => {
   const Icon = icon;
   return (
     <Card className="p-6 flex flex-col gap-4 bg-white">
@@ -22,7 +24,9 @@ const ServiceCard = ({ icon, title, description }: ServiceCardProps) => {
 
       <p className="text-gray-500 max-w-9/12">{description}</p>
 
-      <Button className="self-start">تفاصيل الخدمة</Button>
+      <Button className="self-start">
+        <Link href={to}>تفاصيل الخدمة</Link>
+      </Button>
     </Card>
   );
 };

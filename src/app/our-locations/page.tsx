@@ -7,6 +7,45 @@ import LocationCard from "@/components/cards/location-card";
 import ContentHighlightCard from "@/components/cards/content-highlight-card";
 import { IoLocationOutline } from "react-icons/io5";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "مناطق الخدمة في الرياض | شراء الأثاث المستعمل وتركيب المطابخ في جميع الأحياء",
+  description:
+    "نخدم جميع أحياء الرياض لشراء الأثاث المستعمل وتركيب المطابخ الحديثة. نصل إليك بسرعة ونقدم أفضل الأسعار مع خدمة موثوقة في جميع المناطق.",
+
+  keywords: [
+    "شراء الأثاث المستعمل الرياض أحياء",
+    "مناطق شراء العفش المستعمل الرياض",
+    "شركة شراء أثاث مستعمل في الرياض",
+    "تركيب مطابخ الرياض جميع الأحياء",
+    "خدمات الأثاث المستعمل الرياض",
+    "شراء عفش مستعمل شمال الرياض",
+    "شراء عفش مستعمل شرق الرياض",
+    "شراء عفش مستعمل غرب الرياض",
+    "شراء عفش مستعمل جنوب الرياض",
+  ],
+
+  authors: [{ name: "النجعاوي" }],
+  creator: "النجعاوي",
+  publisher: "النجعاوي",
+
+  openGraph: {
+    title: "نخدم جميع أحياء الرياض | شراء أثاث مستعمل وتركيب مطابخ",
+    description:
+      "سواء كنت في شمال أو جنوب أو شرق أو غرب الرياض، نصل إليك بسرعة ونقدم أفضل الأسعار.",
+    url: "https://your-domain.com/locations",
+    siteName: "النجعاوي",
+    locale: "ar_SA",
+    type: "website",
+  },
+
+  alternates: {
+    canonical: "https://your-domain.com/locations",
+  },
+};
+
 const OurLocations = () => {
   return (
     <>

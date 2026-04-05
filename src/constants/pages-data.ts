@@ -14,6 +14,7 @@ import {
   IoAlertCircleSharp,
   IoBedOutline,
   IoBriefcaseOutline,
+  IoCall,
   IoHomeOutline,
 } from "react-icons/io5";
 import { TbAirConditioning } from "react-icons/tb";
@@ -30,6 +31,7 @@ import { FiClock, FiUsers } from "react-icons/fi";
 import { LiaCertificateSolid } from "react-icons/lia";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const ourServices = [
   {
@@ -37,12 +39,14 @@ export const ourServices = [
     title: "شراء الأثاث المستعمل",
     description:
       "نشتري جميع أنواع الأثاث والأجهزة المستعملة بأفضل الأسعار في الرياض. خدمة سريعة، دفع فوري نقداً، ونقل مجاني.",
+    to: "/furns",
   },
   {
     icon: CgSmartHomeRefrigerator,
     title: "بيع المطابخ الجديده",
     description:
       "نقدم أفضل المطابخ الحديثة بتصاميم عصرية وجودة عالية. مطابخ ألمنيوم وخشب بأسعار منافسة.",
+    to: "/kitchens",
   },
 ];
 
@@ -314,5 +318,56 @@ export const whyChooseElnagaway = [
     icon: AiOutlineSafetyCertificate,
     title: "سمعة ممتازة",
     description: "آلاف العملاء الراضين يثقون بنا",
+  },
+];
+
+export const contactUs = [
+  {
+    icon: FaWhatsapp,
+    title: "واتساب",
+    description: "الطريقة الأسرع للتواصل معنا",
+    tel: "‏‪054 088 4998‬‏ 966+",
+    btnMsg: "انقر للمراسلة عبر واتساب",
+    type: "whatsapp",
+  },
+  {
+    icon: IoCall,
+    title: "اتصل بنا",
+    description: "للاستفسارات الهاتفية المباشرة",
+    tel: "‏‪054 088 4998‬‏ 966+",
+    btnMsg: "انقر للاتصال مباشرة",
+    type: "tel",
+  },
+];
+export const faqs = [
+  {
+    question: "كيف يتم تقييم الأثاث؟",
+    answer:
+      "نقوم بتقييم الأثاث بناءً على حالته، فئته، ومارکته. وبالطلب في السوق، يمكنك إرسال صور واضحة عبر واتساب وسنقدم لك تقييماً فورياً.",
+  },
+  {
+    question: "هل خدمة النقل فعلاً مجانية؟",
+    answer:
+      "نعم، خدمة النقل مجانية تماماً لجميع مناطق الرياض. نحن نتحمل جميع تكاليف النقل.",
+  },
+  {
+    question: "متى يتم الدفع؟",
+    answer:
+      "نقوم بالدفع نقداً فوراً بعد استلام الأثاث وتحميله. لا حاجة للانتظار.",
+  },
+  {
+    question: "ما هي المناطق التي تخدمونها؟",
+    answer:
+      "نخدم جميع أحياء ومناطق الرياض من الشمال إلى الجنوب ومن الشرق إلى الغرب.",
+  },
+  {
+    question: "هل تشترون الأثاث التالف؟",
+    answer:
+      "نشتري الأثاث في حالة جيدة إلى متوسطة. الأثاث التالف جداً قد لا نستطيع شراءه لكن يمكنك مراسلتنا وسنجد حلاً.",
+  },
+  {
+    question: "كم يستغرق الرد على الاستفسار؟",
+    answer:
+      "عادةً نرد خلال 5-10 دقائق في أوقات العمل. نحرص على السرع في الرد على جميع العملاء.",
   },
 ];

@@ -7,6 +7,43 @@ import ProductFeatureCard from "@/components/cards/product-featured-card";
 import InfoCard from "@/components/cards/info-card";
 import FeatureListCard from "@/components/cards/feature-list-card";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "مطابخ حديثة في الرياض | تصميم وتركيب مطابخ عصرية بأسعار مميزة",
+  description:
+    "اكتشف أفضل المطابخ الحديثة في الرياض بتصاميم عصرية وجودة عالية. نقدم تصميم 3D مجاني، تركيب احترافي، وضمان شامل بأسعار تنافسية.",
+
+  keywords: [
+    "مطابخ حديثة الرياض",
+    "تفصيل مطابخ",
+    "مطابخ مودرن",
+    "تصميم مطابخ 3D",
+    "مطابخ جاهزة",
+    "تركيب مطابخ الرياض",
+    "مطابخ خشب",
+    "مطابخ المنيوم",
+  ],
+
+  authors: [{ name: "النجعاوي للمطابخ الحديثة" }],
+  creator: "النجعاوي",
+  publisher: "النجعاوي",
+
+  openGraph: {
+    title: "مطابخ حديثة في الرياض | تصميم مجاني وتركيب احترافي",
+    description:
+      "احصل على مطبخ أحلامك بتصميم عصري وجودة عالية مع أفضل الأسعار في الرياض.",
+    url: "https://your-domain.com/kitchens",
+    siteName: "النجعاوي",
+    locale: "ar_SA",
+    type: "website",
+  },
+
+  alternates: {
+    canonical: "https://your-domain.com/kitchens",
+  },
+};
+
 const Kitchens = () => {
   return (
     <>

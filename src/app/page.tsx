@@ -14,6 +14,7 @@ import ServiceCard from "@/components/cards/service-card";
 import ImageCard from "@/components/cards/image-card";
 import InfoCard from "@/components/cards/info-card";
 import LocationCard from "@/components/cards/location-card";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -31,10 +32,10 @@ const Home = () => {
           </p>
           <div className="flex flex-col md:flex-row justify-center gap-4">
             <button className="cursor-pointer font-bold bg-white text-green-600 px-10 py-2 rounded hover:bg-green-600 hover:text-white transition duration-150">
-              بيع أثاثك الآن
+              <Link href={"/furns"}>بيع أثاثك الآن</Link>
             </button>
             <button className="cursor-pointer font-bold border border-white px-10 py-2 rounded hover:bg-white hover:text-green-600 transition duration-150">
-              اشتر مطبخك الجديد
+              <Link href={"/kitchens"}>اشتر مطبخك الجديد</Link>
             </button>
           </div>
         </div>
@@ -54,6 +55,7 @@ const Home = () => {
 
       {/* What We Buy Section*/}
       <Section
+        className="bg-green-50"
         title="ما الذي نشتريه؟"
         description="نشتري جميع أنواع الأثاث والأجهزة المستعملة في حالة جيدة"
       >
@@ -75,7 +77,7 @@ const Home = () => {
           ))}
         </div>
         <Button className=" w-full lg:w-1/4 mx-auto mt-12">
-          تفاصيل الخدمه
+          <Link href={"/kitchens"}>اشتر مطبخك الجديد</Link>
         </Button>
       </Section>
 
@@ -104,12 +106,16 @@ const Home = () => {
       {/* Locations We Serve Section*/}
       <Section title="المناطق التي نخدمها" description="نغطي جميع أحياء الرياض">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {locationsWeServe.map((location, idx) => (
+          {locationsWeServe.splice(0, 5).map((location, idx) => (
             <LocationCard key={idx} {...location} />
           ))}
         </div>
-        <Button to="/our-locations" variant="secondary" className="w-full lg:w-1/4 mx-auto mt-12">
-          عرض جميع المناطق
+        <Button
+          to="/our-locations"
+          variant="secondary"
+          className="w-full lg:w-1/4 mx-auto mt-12"
+        >
+          <Link href={"/our-locations"}>معرفة المناطق التي نخدمها</Link>
         </Button>
       </Section>
 
