@@ -33,14 +33,28 @@ export const metadata: Metadata = {
     title: "مطابخ حديثة في الرياض | تصميم مجاني وتركيب احترافي",
     description:
       "احصل على مطبخ أحلامك بتصميم عصري وجودة عالية مع أفضل الأسعار في الرياض.",
-    url: "https://your-domain.com/kitchens",
+    url: `${process.env.BASE_URL}/kitchens`,
     siteName: "النجعاوي",
     locale: "ar_SA",
     type: "website",
   },
 
   alternates: {
-    canonical: "https://your-domain.com/kitchens",
+    canonical: `${process.env.BASE_URL}/kitchens`,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 

@@ -33,14 +33,28 @@ export const metadata: Metadata = {
     title: "شراء الأثاث المستعمل في الرياض | أسعار مميزة وخدمة سريعة",
     description:
       "هل لديك أثاث مستعمل؟ نشتريه بأفضل سعر في الرياض مع خدمة سريعة وتقييم مجاني.",
-    url: "https://your-domain.com/furns",
+    url: `${process.env.BASE_URL}/furns`,
     siteName: "النجعاوي",
     locale: "ar_SA",
     type: "website",
   },
 
   alternates: {
-    canonical: "https://your-domain.com/furns",
+    canonical: `${process.env.BASE_URL}/furns`,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 

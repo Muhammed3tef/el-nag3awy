@@ -11,7 +11,7 @@ const cairo = Cairo({
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL(`${process.env.BASE_URL}`),
 
   title: {
     default: "النجعاوي | شراء الأثاث المستعمل وبيع المطابخ في الرياض",
@@ -37,15 +37,16 @@ export const metadata: Metadata = {
     title: "النجعاوي | شراء الأثاث المستعمل وبيع المطابخ في الرياض",
     description:
       "أفضل شركة لشراء الأثاث المستعمل وبيع المطابخ الحديثة في الرياض بأسعار تنافسية وخدمة موثوقة.",
-    url: "https://your-domain.com",
+    url: `${process.env.BASE_URL}`,
     siteName: "النجعاوي",
     locale: "ar_SA",
     type: "website",
   },
 
   alternates: {
-    canonical: "https://your-domain.com",
+    canonical: `${process.env.BASE_URL}`,
   },
+
 
 };
 

@@ -115,7 +115,7 @@ const Home = () => {
           variant="secondary"
           className="w-full lg:w-1/4 mx-auto mt-12"
         >
-          <Link href={"/our-locations"}>معرفة المناطق التي نخدمها</Link>
+          معرفة المناطق التي نخدمها
         </Button>
       </Section>
 

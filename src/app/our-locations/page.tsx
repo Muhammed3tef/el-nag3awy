@@ -35,14 +35,28 @@ export const metadata: Metadata = {
     title: "نخدم جميع أحياء الرياض | شراء أثاث مستعمل وتركيب مطابخ",
     description:
       "سواء كنت في شمال أو جنوب أو شرق أو غرب الرياض، نصل إليك بسرعة ونقدم أفضل الأسعار.",
-    url: "https://your-domain.com/locations",
+    url: `${process.env.BASE_URL}/our-locations`,
     siteName: "النجعاوي",
     locale: "ar_SA",
     type: "website",
   },
 
   alternates: {
-    canonical: "https://your-domain.com/locations",
+    canonical: `${process.env.BASE_URL}/our-locations`,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 

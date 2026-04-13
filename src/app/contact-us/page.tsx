@@ -29,14 +29,14 @@ export const metadata: Metadata = {
     title: "تواصل معنا | خدمة سريعة لشراء الأثاث المستعمل في الرياض",
     description:
       "تواصل الآن مع النجعاوي لبيع أثاثك المستعمل بأفضل سعر في الرياض. رد سريع وخدمة موثوقة.",
-    url: "https://your-domain.com/contact",
+    url: `${process.env.BASE_URL}/contact-us`,
     siteName: "النجعاوي",
     locale: "ar_SA",
     type: "website",
   },
 
   alternates: {
-    canonical: "https://your-domain.com/contact",
+    canonical: `${process.env.BASE_URL}/contact-us`,
   },
 };
 

@@ -31,14 +31,28 @@ export const metadata: Metadata = {
     title: "من نحن | النجعاوي",
     description:
       "شركة رائدة في شراء الأثاث المستعمل وبيع المطابخ الحديثة في الرياض بخبرة وثقة.",
-    url: "https://your-domain.com/about",
+    url: `${process.env.BASE_URL}/who-are-we`,
     siteName: "النجعاوي",
     locale: "ar_SA",
     type: "website",
   },
 
   alternates: {
-    canonical: "https://your-domain.com/about",
+    canonical: `${process.env.BASE_URL}/who-are-we`,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
