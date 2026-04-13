@@ -60,7 +60,7 @@ export const metadata: Metadata = {
 
 const Furns = () => {
   return (
-    <>
+    <main>
       {/* Hero Section */}
       <HeroSection
         imgPath={heroImg}
@@ -130,7 +130,7 @@ const Furns = () => {
         title="جاهز لبيع أثاثك؟"
         description="احصل على أفضل سعر لأثاثك المستعمل اليوم"
       />
-    </>
+    </main>
   );
 };
 

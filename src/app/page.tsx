@@ -18,7 +18,7 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-    <>
+    <main>
       {/* Hero Section */}
       <section className="hero-section relative bg-[url('/imgs/hero-img.svg')]  bg-cover bg-center min-h-screen flex justify-center items-center">
         <div className="overlay inset-0 absolute bg-[#1D3F34] opacity-75" />
@@ -123,7 +123,7 @@ const Home = () => {
         title="هل تريد بيع أثاثك اليوم؟"
         description="تواصل معنا الآن واحصل على أفضل سعر لأثاثك المستعمل مع خدمة نقل مجانية ودفع فوري"
       />
-    </>
+    </main>
   );
 };
 

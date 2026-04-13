@@ -62,7 +62,7 @@ export const metadata: Metadata = {
 
 const OurLocations = () => {
   return (
-    <>
+    <main>
       {/* Hero Section */}
       <HeroSection
         title="مناطق الخدمة في الرياض"
@@ -98,7 +98,7 @@ const OurLocations = () => {
         title="في أي منطقة بالرياض؟"
         description="تواصل معنا الآن وسنصل إليك أينما كنت في الرياض"
       />
-    </>
+    </main>
   );
 };
 

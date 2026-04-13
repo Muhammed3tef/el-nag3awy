@@ -1,7 +1,6 @@
 import { LuMessageCircle } from "react-icons/lu";
 import Button from "../ui/button/button";
 import { IoCallOutline } from "react-icons/io5";
-import { heroImg } from "../../../public/imgs";
 import Image from "next/image";
 
 interface HeroSectionProps {

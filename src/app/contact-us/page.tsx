@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 
 const ContactUs = () => {
   return (
-    <>
+    <main>
       {/* Hero Section */}
       <HeroSection
         title="تواصل معنا"
@@ -160,7 +160,7 @@ const ContactUs = () => {
         title="لا تتردد في التواصل"
         description="نحن في انتظار استفسارك ومستعدون لخدمتك"
       />
-    </>
+    </main>
   );
 };
 

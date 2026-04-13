@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 
 const WhoAreWe = () => {
   return (
-    <>
+    <main>
       {/* Hero Section */}
       <HeroSection
         title="من نحن"
@@ -143,7 +143,7 @@ const WhoAreWe = () => {
         title="جاهزون لخدمتك"
         description="تواصل معنا الآن ودعنا نساعدك"
       />
-    </>
+    </main>
   );
 };
 

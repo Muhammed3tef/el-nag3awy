@@ -60,7 +60,7 @@ export const metadata: Metadata = {
 
 const Kitchens = () => {
   return (
-    <>
+    <main>
       {/* Hero Section */}
       <HeroSection
         title="اشتر مطبخك الجديد"
@@ -127,7 +127,7 @@ const Kitchens = () => {
         title="هل تريد مطبخ أحلامك؟"
         description="تواصل معنا الآن واحصل على استشارة مجانية وتصميم 3D لمطبخك"
       />
-    </>
+    </main>
   );
 };
 
