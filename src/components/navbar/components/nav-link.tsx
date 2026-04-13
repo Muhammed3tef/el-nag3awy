@@ -9,9 +9,10 @@ type Props = {
     href: string;
     icon?: IconType;
   };
+  onClick?: () => void;
 };
 
-export const NavLink = ({ link }: Props) => {
+export const NavLink = ({ link, onClick }: Props) => {
   const pathname = usePathname();
 
   const isActive =
@@ -21,6 +22,7 @@ export const NavLink = ({ link }: Props) => {
     <li className="w-full relative cursor-pointer">
       <Link
         href={link.href}
+        onClick={onClick}
         className={`text-gray-500 font-medium text-xl lg:text-base capitalize whitespace-nowrap transition-all duration-300 ${isActive ? "text-green-600 font-bold" : ""}`}
       >
         {link.name}

@@ -54,7 +54,11 @@ const MobileMenu = () => {
 
           <ul className="flex flex-col gap-6">
             {navLinks.map((link, idx) => (
-              <NavLink key={idx} link={link} />
+              <NavLink
+                key={idx}
+                link={link}
+                onClick={() => setIsOpen(false)} 
+              />
             ))}
           </ul>
         </div>
