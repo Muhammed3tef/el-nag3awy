@@ -20,11 +20,11 @@ const SubFooter = ({ title, description }: Props) => {
         <p className="text-sm md:text-lg">{description}</p>
 
         <div className="btns-wrapper flex gap-4 justify-center items-center">
-          <Button variant="primary">
+          <Button variant="primary" to="https://wa.me/0540884998">
             <RiWhatsappFill size={22} />
             تواصل عبر واتساب
           </Button>
-          <Button variant="secondary">
+          <Button variant="secondary" to="tel:‏‪054 088 4998‬‏ 966+">
             <IoCallOutline size={22} />
             اتصل الآن
           </Button>

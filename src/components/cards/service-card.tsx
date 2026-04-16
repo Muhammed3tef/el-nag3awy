@@ -24,8 +24,8 @@ const ServiceCard = ({ icon, title, description, to }: ServiceCardProps) => {
 
       <p className="text-gray-500 max-w-9/12">{description}</p>
 
-      <Button className="self-start">
-        <Link href={to}>تفاصيل الخدمة</Link>
+      <Button className="self-start" to={to}>
+        تفاصيل الخدمة
       </Button>
     </Card>
   );

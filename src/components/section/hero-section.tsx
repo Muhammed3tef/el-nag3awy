@@ -11,7 +11,9 @@ interface HeroSectionProps {
 const HeroSection = ({ title, description, imgPath }: HeroSectionProps) => {
   return (
     <section className="hero-section pt-28">
-      <div className={`grid grid-cols-1 ${imgPath ? "md:grid-cols-2": "min-h-[50vh]"}`}>
+      <div
+        className={`grid grid-cols-1 ${imgPath ? "md:grid-cols-2" : "min-h-[50vh]"}`}
+      >
         <div
           style={{
             background:
@@ -23,11 +25,11 @@ const HeroSection = ({ title, description, imgPath }: HeroSectionProps) => {
           <p className="text-xl">{description}</p>
           {imgPath && (
             <div className="btns-wrapper flex flex-col gap-4 justify-center items-start">
-              <Button variant="primary">
+              <Button variant="primary" to="https://wa.me/0540884998">
                 <LuMessageCircle size={22} />
                 تواصل عبر واتساب
               </Button>
-              <Button variant="secondary">
+              <Button variant="secondary" to="tel:‏‪054 088 4998‬‏ 966+">
                 <IoCallOutline size={22} />
                 اتصل الآن
               </Button>

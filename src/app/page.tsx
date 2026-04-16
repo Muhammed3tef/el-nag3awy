@@ -76,8 +76,8 @@ const Home = () => {
             <ImageCard key={idx} {...item} />
           ))}
         </div>
-        <Button className=" w-full lg:w-1/4 mx-auto mt-12">
-          <Link href={"/kitchens"}>اشتر مطبخك الجديد</Link>
+        <Button className=" w-full lg:w-1/4 mx-auto mt-12" to="/kitchens">
+          اشتر مطبخك الجديد
         </Button>
       </Section>
 

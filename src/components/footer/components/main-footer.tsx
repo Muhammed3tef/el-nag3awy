@@ -97,12 +97,21 @@ const MainFooter = () => {
                 الرياض، المملكة العربية السعودية
               </li>
 
-              <li className="flex items-center gap-2">
-                <IoCallOutline className="text-amber-500" size={20} />
-                ‏‪054 088 4998‬‏ 966+
+              <li>
+                <Link
+                  href="tel:‏‪054 088 4998‬‏ 966+"
+                  className="flex items-center gap-2"
+                >
+                  <IoCallOutline className="text-amber-500" size={20} />
+                  ‏‪054 088 4998‬‏ 966+
+                </Link>
               </li>
             </ul>
-            <Button className="mt-5 w-full" variant="primary">
+            <Button
+              className="mt-5 w-full"
+              variant="primary"
+              to="https://wa.me/0540884998"
+            >
               <RiWhatsappFill size={22} />
               تواصل عبر واتساب
             </Button>
