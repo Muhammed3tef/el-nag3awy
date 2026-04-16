@@ -5,7 +5,7 @@ import Link from "next/link";
 const NavWhatsapp = () => {
   return (
     <button className="cursor-pointer hidden lg:block">
-      <Link href="https://wa.me/0540884998" target="_blank">
+      <Link href="https://wa.me/966540884998" target="_blank">
         <Image
           src={whatsappVector}
           alt="تواصل معنا عبر الواتساب النجعاوي لشراء الاثائث المستعمل بالرياض"

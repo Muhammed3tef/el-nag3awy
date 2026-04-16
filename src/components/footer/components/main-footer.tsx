@@ -110,7 +110,7 @@ const MainFooter = () => {
             <Button
               className="mt-5 w-full"
               variant="primary"
-              to="https://wa.me/0540884998"
+              to="https://wa.me/966540884998"
             >
               <RiWhatsappFill size={22} />
               تواصل عبر واتساب

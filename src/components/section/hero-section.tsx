@@ -25,11 +25,11 @@ const HeroSection = ({ title, description, imgPath }: HeroSectionProps) => {
           <p className="text-xl">{description}</p>
           {imgPath && (
             <div className="btns-wrapper flex flex-col gap-4 justify-center items-start">
-              <Button variant="primary" to="https://wa.me/0540884998">
+              <Button variant="primary" to="https://wa.me/966540884998">
                 <LuMessageCircle size={22} />
                 تواصل عبر واتساب
               </Button>
-              <Button variant="secondary" to="tel:‏‪054 088 4998‬‏ 966+">
+              <Button variant="secondary" to="tel:0540884998">
                 <IoCallOutline size={22} />
                 اتصل الآن
               </Button>
