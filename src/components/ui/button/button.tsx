@@ -17,7 +17,7 @@ const Button = ({ className, variant = "primary",to, onClick, children }: Props)
       onClick={onClick}
       className={`${className} ${variantClasses} cursor-pointer text-sm md:text-base font-bold transition flex items-center justify-center gap-2 px-4 py-2 rounded-md`}
     >
-      {to ? <Link href={to}>{children}</Link> : children}
+      {to ? <Link href={to} className="flex items-center gap-2 w-full">{children}</Link> : children}
     </button>
   );
 };
